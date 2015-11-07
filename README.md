@@ -1,4 +1,4 @@
-k_cores
+k_cores.jl
 =====
 This package contain implementation of [An O(m) Algorithm for Cores Decomposition of Networks](http://vlado.fmf.uni-lj.si/pub/networks/doc/cores/cores.pdf)
 
