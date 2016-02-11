@@ -1,6 +1,6 @@
 using k_cores
 using Graphs
-g = read_edges_from_file(string(Pkg.dir("powerlaw"),"/test/trgr_C.mat"))
+g = read_edges_from_file(string(Pkg.dir("k_cores"),"/test/trgr_C.mat"))
 g_core_number = core_number(g)
 for i in [3,10,18,22,26,30,33]
   g_k_core1 = k_core(g,k=i,core_number = g_core_number)
@@ -10,13 +10,13 @@ for i in [3,10,18,22,26,30,33]
     edg_dict[sort([e.source,e.target])] = 0
   end
   try
-    trgr_g = readdlm(string(Pkg.dir("powerlaw"),"/test/trgr_c_kcores/trgr_C_k$i.mat",Int)
+    trgr_g = readdlm(string(Pkg.dir("k_cores"),"/test/trgr_c_kcores/trgr_C_k$i.mat",Int)
   catch
     println("empty input at file trgr_C_k$i.mat")
     continue
   end
   if (length(edg) != size(trgr_g)[1])
-    println("Differen edge size k_core func have $(length(edg)) edges and trgr_C_k$(i).mat have $(size(trgr_g)[1])")
+    println("Different edge size k_core func have $(length(edg)) edges and trgr_C_k$(i).mat have $(size(trgr_g)[1])")
   end
   for i=1:size(trgr_g)[1]
     if haskey(edg_dict,sort([trgr_g[i,1],trgr_g[i,2]]))

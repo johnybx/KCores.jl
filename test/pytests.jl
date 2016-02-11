@@ -6,7 +6,7 @@ using Base.Test
 
 
 function random_graph(num_of_vertices,num_of_edges)
-  v = [0:num_of_vertices]
+  v = collect(0:num_of_vertices)
   edges = Array{Int,1}[]
   e = Dict{Array{Int,1},Int}()
   for i=1:num_of_edges
