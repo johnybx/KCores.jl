@@ -65,6 +65,7 @@ Returns - g - Generic graph from package Graphs.jl
 **NOTE: **Core number is not defined for parallel edges or selfloops. If graph given to the functions contain parallel edges or selfloops they are deleted and warning is raised.
 
 ### Helper functions
+*This functions have no special meaning, they were used only for testing and my personal use*
 
 #### read_edges_from_file(file::String;last_vertex::Int64 = None,directed::Bool = false,start_vertex::Int64 = 0,key_of_edge_attr::String="cost",selfloops::Bool = true,parallel_edges::Bool =true )
 
