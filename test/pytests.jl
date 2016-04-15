@@ -1,4 +1,4 @@
-using k_cores
+using KCores
 using PyCall
 using Graphs
 using Base.Test

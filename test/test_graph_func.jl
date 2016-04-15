@@ -1,4 +1,4 @@
-using k_cores
+using KCores
 using Base.Test
 
 v = collect(0:10)
