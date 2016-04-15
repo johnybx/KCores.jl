@@ -1,4 +1,4 @@
-k_cores is licensed under the MIT License:
+KCores is licensed under the MIT License:
 
     Copyright (c) 2015: Ján Brechtl
 
