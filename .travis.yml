@@ -3,5 +3,5 @@ language: julia
 before_install:
   - sudo apt-get install python-networkx
 julia:
-  - release
   - 0.4
+  - 0.5
